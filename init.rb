@@ -12,7 +12,7 @@ Redmine::Plugin.register :iprivate do
   author_url ''
 end
 
-#Rails.application.config.to_prepare do
-#  Issue.send(:include, Patches::Access)
-#  Issue.send(:include, Patches::Watch)
-#end
+Rails.application.config.to_prepare do
+  Issue.send(:include, Patches::Access)
+  Issue.send(:include, Patches::Watch)
+end
