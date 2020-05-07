@@ -3,7 +3,7 @@ require 'patches/access'
 require 'patches/watch'
 require_dependency 'issue'
 
-Redmine::Plugin.register :iprivate do
+Redmine::Plugin.register :ruby_redmine_private_issue_watchers do
   name 'Iprivate plugin'
   author 'Nick'
   description 'This is a plugin for Redmine'
